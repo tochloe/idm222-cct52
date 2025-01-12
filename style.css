@@ -6,6 +6,7 @@
 @font-face {
     font-family: "Spline Sans";
     src: url(./SplineSans-VariableFont_wght.ttf);
+    font-weight: 300 700;
 }
 
 @font-face {
@@ -14,6 +15,68 @@
 }
 
 html {
-    --green: #
-    --yellow: #
+    --red: #A62626;
+    --cream: #FFFFF5;
+    --black: #2C2323;
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--black);
+}
+
+
+/*title name*/
+h3 {
+    font-family: "Spline Sans";
+    font-weight: 600;
+    font-size: 36px;
+    flex-shrink: 0;
+    line-height: normal;
+    margin-top: 0;
+    color: var(--red);
+}
+
+/*date*/
+h4 {
+    font-family: "Instrument Serif";
+    font-size: 24px;
+    font-weight: 400;
+    flex-shrink: 0;
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+
+h6 {
+    font-family: "Instrument Serif";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Instrument Serif";
+    font-size: 20px;
+    font-weight: 400;
+    flex-shrink: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*margins for all? (maybe just mobile)*/
+div.mobile {
+    margin: 32px;
+}
+
+img {
+    border-radius: 34.3px;
+    margin-bottom: 0;
+}
+
+div.nav {
+    width: 100%;
+    height: 77px;
+    flex-shrink: 0;
+    background-color: #A62626;
 }
