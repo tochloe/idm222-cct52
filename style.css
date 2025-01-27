@@ -14,6 +14,10 @@
     src: url(./InstrumentSerif-Regular.ttf);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     --red: #A62626;
     --cream: #FFFFF5;
@@ -47,6 +51,17 @@ h4 {
     margin-bottom: 0;
 }
 
+/*sincere and opener*/
+h5 {
+    font-family: "Instrument Serif";
+    font-size: 20px;
+    font-weight: 400px;
+    flex-shrink: 0;
+    font-style: italic;
+    display: flex;
+    justify-content: flex-end;
+}
+
 h6 {
     font-family: "Instrument Serif";
     font-size: 20px;
@@ -69,7 +84,7 @@ div.mobile {
     margin: 32px;
 }
 
-img {
+img.featured {
     border-radius: 34.3px;
     margin-bottom: 0;
 }
@@ -79,4 +94,20 @@ div.nav {
     height: 77px;
     flex-shrink: 0;
     background-color: #A62626;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px 10px;
+}
+
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+.stack {
+    align-self: center;
 }
