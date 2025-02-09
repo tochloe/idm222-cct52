@@ -107,6 +107,12 @@ div.nav {
       flex-direction: column;
     }
   }
+/*WHY ISNT IT WORKINGGG*/
+@media screen (max-width:800px) {
+    .mobile {
+        margin: 200px;
+    }
+}
 
 .stack {
     align-self: center;
