@@ -89,13 +89,56 @@ img.featured {
     margin-bottom: 0;
 }
 
-div.nav {
-    width: 100%;
-    height: 77px;
-    flex-shrink: 0;
-    background-color: #A62626;
+/*nav bar*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0;
 }
 
+.nav ul{
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.nav h1{
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.navimg {
+    width: 50px;
+    height: auto;
+}
+
+header {
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    color: var(--cream);
+}
+/*nav bar end*/
+
+
+/*image box stacks when the screen gets smaller*/
 .container {
     display: flex;
     justify-content: center;
@@ -107,13 +150,143 @@ div.nav {
       flex-direction: column;
     }
   }
-/*WHY ISNT IT WORKINGGG*/
-@media screen (max-width:800px) {
+
+/*WHY ISNT IT WORKINGGG the margins increase as the screen gets larger*/
+@media screen and (min-width: 1200px) {
     .mobile {
-        margin: 200px;
+      margin-left: 150px;
+      margin-right: 150px;
     }
-}
+  }
 
 .stack {
     align-self: center;
+}
+
+footer {
+    display: flex;
+    background-color: var(--red);
+    color:var(--black);
+}
+
+h2.foot {
+    justify-content: flex-start;
+}
+
+p.foot {
+    justify-content: flex-end;
+    font-family: "Instrument Serif";
+    margin-left: auto;
+}
+
+a {
+    color: var(--black):
+}
+
+a:hover {
+    font-family: "Spline Sans";
+    text-transform: uppercase;
+}
+
+li {
+    font-family: "Instrument Serif";
+    font-size: 20px;
+    list-style:none;
+}
+
+/*About me page css*/
+.abtme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.abtme img{ 
+    margin-bottom: 10px;
+    border-radius: 700px;
+    max-width: 75%;
+    height: auto;
+}
+
+.abtme ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1 1 250px;
+}
+
+.abtme li {
+    margin-top: 10px;
+    padding: 0;
+    width: fit-content;
+}
+
+.abtme li::before {
+    content: "🍽️";
+    
+}
+
+.abtmecontent h4{
+font-family: "Spline Sans";
+font-weight: 600;
+margin-bottom: 10px;
+}
+
+.abtmecontent {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+    .abtmecontent {
+      flex-direction: column;
+    }
+  }
+
+  .abtmecontent p {
+    font-family: "Spline Sans";
+    max-width:600px;
+    font-weight: 300;
+    flex: 2 1 500px;
+  }
+
+
+  strong {
+    font-family: "Spline Sans";
+font-weight:400;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    width: calc(33.33%);
+    height: auto;
+    object-fit: cover;
+}
+
+/*Blog layout*/
+.bloglayout {
+    display: flex;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+.blogcard {
+    padding: 10px;
+}
+
+
+footer {
+    background-color: var(--red);
 }
