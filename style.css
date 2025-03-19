@@ -277,13 +277,25 @@ font-weight:400;
 
 /*Blog layout*/
 .bloglayout {
-    display: flex;
+    display: grid;
     justify-content:space-around;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 10px;
 }
 
 .blogcard {
-    padding: 10px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.blogcard:hover {
+    transform: scale(1.1);
+}
+
+.blogcard img {
+    width: 100%;
+    height: height;
+    object-fit: cover;
 }
 
 
